@@ -16,6 +16,7 @@ class java1{
 	{
 		System.out.println("sourav");
 		System.out.println("sourav");
+		System.out.println("sourav");		System.out.println("sourav");		System.out.println("sourav");
 		System.out.println("sourav");
 	}
 }
