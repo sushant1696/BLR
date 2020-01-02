@@ -1,12 +1,24 @@
-﻿using System;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file=Dice.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Sushanta das"/>
+// ----------------------------------------------------------------------------------------------------------------------
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace ThirtyFunctinalAndAlgorithmProgram
 {
+    /// <summary>
+    /// Dice is class where IsDice is the method
+    /// </summary>
     class Dice 
     {
-        public void isdice()
+        /// <summary>
+        /// Determines whether this instance is dice.
+        /// </summary>
+        public void IsDice()
         {
             int d1=0, d2=0, d3=0, d4=0, d5=0, d6=0;
             Random rand = new Random();

@@ -1,17 +1,30 @@
-﻿using System;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file=Armstrong.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="sushanta das"/>
+// --------------------------------------------------------------------------------------------------------------------
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace ThirtyFunctinalAndAlgorithmProgram
 {
+    /// <summary>
+    /// Armstrong is the class where isArmstrong is a method for armstrong
+    /// </summary>
     class armstrong
     {
-        public static int isangstrom()
+        /// <summary>
+        /// Determines whether this instance is angstrong.
+        /// </summary>
+        /// <returns></returns>
+        public static int isAngstrong()
         {
             int sum = 0;
           int temp;
             Console.WriteLine("enter the value of n");
-            int n=int.Parse(Console.ReadLine());
+           int n=int.Parse(Console.ReadLine());
             temp = n;
             while (n > 0)
             {

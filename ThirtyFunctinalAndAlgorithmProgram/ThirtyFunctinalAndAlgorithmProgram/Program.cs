@@ -28,6 +28,13 @@ namespace ThirtyFunctinalAndAlgorithmProgram
             Console.WriteLine("20 for the wind chill");
             Console.WriteLine("21 for the distance");
             Console.WriteLine("22 for the temperature");
+            Console.WriteLine("23 for monthly payment");
+            Console.WriteLine("24 for vending machine");
+            Console.WriteLine("25 for stopwatch");
+            Console.WriteLine("26 for nible swap");
+            Console.WriteLine(" 27 for factorial of a number");
+            Console.WriteLine(" 28 for day of week");
+            Console.WriteLine(" 29 for insertion sort");
 
             int a = int.Parse(Console.ReadLine());
 
@@ -43,7 +50,7 @@ namespace ThirtyFunctinalAndAlgorithmProgram
                     int hi = arr.Length;
                     int x = Convert.ToInt32(Console.ReadLine());
                     BinerySearch obj1=new BinerySearch();
-                    int result = obj1.isbinary(arr,0,hi-1,x);
+                    int result = obj1.isBinary(arr,0,hi-1,x);
                     Console.WriteLine("element is present at index", result);
                     break;
                 case 3:
@@ -67,8 +74,8 @@ namespace ThirtyFunctinalAndAlgorithmProgram
                     TwoDArray.isarray();
                     break;
                 case 7:
-                    FlipCoin obj7 = new FlipCoin();
-                    obj7.iscoin(100);
+                    FlipCoin flipCoin = new FlipCoin();
+                    flipCoin.iscoin(100);
                     break;
                 case 8:
                     LeapYear obj8 = new LeapYear();
@@ -82,7 +89,7 @@ namespace ThirtyFunctinalAndAlgorithmProgram
                     // BubbleSort obj10 = new BubbleSort();
                     int[] array = { 9,8,6,4,87 };
                      n = array.Length;                
-                BubbleSort.isbubble(array,n);
+                BubbleSort.isBubble(array,n);
                     break;
                 case 11:
                    
@@ -137,7 +144,38 @@ namespace ThirtyFunctinalAndAlgorithmProgram
                     Temperature obj22 = new Temperature();
                     obj22.istemperature();
                     break;
-
+                case 23:
+                    MonthlyPayment obj23 = new MonthlyPayment();
+                    obj23.ispayment(5000,3,5);
+                    break;
+                case 24:
+                    VendingMachine obj24 = new VendingMachine();
+                    obj24.ismachine(1035);
+                    break;
+                case 25:
+                    StopWatch stopwatch = new StopWatch();
+                    stopwatch.Main();
+                    break;
+                case 26:
+                    SwapNibble swap = new SwapNibble();
+                   
+                     Console.WriteLine(swap.isswap(100));
+                    break;
+                case 27:
+                    factor fac = new factor();
+                    fac.isfactor(5);
+                    break;
+                case 28:
+                    CalenderDayOfWeek day = new CalenderDayOfWeek();
+                    day.isDay(30, 12, 2019);
+                    break;
+                case 29:
+                    InsertionSort.insertion();
+                    break;
+                case 30:
+                    //  SquareRootOfNonNegativeNo non = new SquareRootOfNonNegativeNo();
+                    SquareRootOfNonNegativeNo.issquar();
+                    break;
             }
 
 

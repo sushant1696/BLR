@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bridgelabz\\source\\repos\\ThirtyFunctinalAndAlgorithmProgram\\ThirtyFunctinalAndAlgorithmProgram\\ThirtyFunctinalAndAlgorithmProgram.csproj": {}
+    "C:\\workspace\\BLR\\ThirtyFunctinalAndAlgorithmProgram\\ThirtyFunctinalAndAlgorithmProgram\\ThirtyFunctinalAndAlgorithmProgram.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bridgelabz\\source\\repos\\ThirtyFunctinalAndAlgorithmProgram\\ThirtyFunctinalAndAlgorithmProgram\\ThirtyFunctinalAndAlgorithmProgram.csproj": {
+    "C:\\workspace\\BLR\\ThirtyFunctinalAndAlgorithmProgram\\ThirtyFunctinalAndAlgorithmProgram\\ThirtyFunctinalAndAlgorithmProgram.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bridgelabz\\source\\repos\\ThirtyFunctinalAndAlgorithmProgram\\ThirtyFunctinalAndAlgorithmProgram\\ThirtyFunctinalAndAlgorithmProgram.csproj",
+        "projectUniqueName": "C:\\workspace\\BLR\\ThirtyFunctinalAndAlgorithmProgram\\ThirtyFunctinalAndAlgorithmProgram\\ThirtyFunctinalAndAlgorithmProgram.csproj",
         "projectName": "ThirtyFunctinalAndAlgorithmProgram",
-        "projectPath": "C:\\Users\\Bridgelabz\\source\\repos\\ThirtyFunctinalAndAlgorithmProgram\\ThirtyFunctinalAndAlgorithmProgram\\ThirtyFunctinalAndAlgorithmProgram.csproj",
+        "projectPath": "C:\\workspace\\BLR\\ThirtyFunctinalAndAlgorithmProgram\\ThirtyFunctinalAndAlgorithmProgram\\ThirtyFunctinalAndAlgorithmProgram.csproj",
         "packagesPath": "C:\\Users\\Bridgelabz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bridgelabz\\source\\repos\\ThirtyFunctinalAndAlgorithmProgram\\ThirtyFunctinalAndAlgorithmProgram\\obj\\",
+        "outputPath": "C:\\workspace\\BLR\\ThirtyFunctinalAndAlgorithmProgram\\ThirtyFunctinalAndAlgorithmProgram\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
