@@ -1,18 +1,24 @@
-﻿using System;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file=Even.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Sushanta das"/>
+// ----------------------------------------------------------------------------------------------------------------------
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace ThirtyFunctinalAndAlgorithmProgram
 {
     /// <summary>
-    /// 
+    /// Even is a class where  IsEven
     /// </summary>
-    class even
+    class Even
     {
         /// <summary>
         /// Isevens this instance.
         /// </summary>
-        public void iseven()
+        public void IsEven()
         {
             Console.WriteLine("enter the number of n");
             int n = int.Parse(Console.ReadLine());

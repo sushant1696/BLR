@@ -1,12 +1,25 @@
-﻿using System;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file=FlipCoin.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Sushanta das"/>
+// ----------------------------------------------------------------------------------------------------------------------
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace ThirtyFunctinalAndAlgorithmProgram
 {
+    /// <summary>
+    /// FlipCoin is class where IsCoin is the method.
+    /// </summary>
     class FlipCoin
     {
-        public void iscoin(int max)
+        /// <summary>
+        /// Determines whether the specified maximum is coin.
+        /// </summary>
+        /// <param name="max">The maximum.</param>
+        public void IsCoin(int max)
         {
             int head = 0;int tail = 0;
             Random rand = new Random();

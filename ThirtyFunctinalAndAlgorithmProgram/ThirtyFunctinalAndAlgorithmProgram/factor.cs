@@ -13,13 +13,13 @@ namespace ThirtyFunctinalAndAlgorithmProgram
     /// <summary>
     /// Factor is a class where isFactor is a method.
     /// </summary>
-    class factor
+    class Factor
     {
         /// <summary>
         /// Determines whether the specified n is Factor.
         /// </summary>
         /// <param name="n">The n.</param>
-        public void isFactor(int n)
+        public void IsFactor(int n)
         {
             int fact=1;
             for(int i = 1; i <= n; i++)

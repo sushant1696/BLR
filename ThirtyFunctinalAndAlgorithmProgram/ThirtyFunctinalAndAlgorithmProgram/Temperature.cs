@@ -1,19 +1,24 @@
-﻿using System;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file=Temperature.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Sushanta das"/>
+// ----------------------------------------------------------------------------------------------------------------------
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace ThirtyFunctinalAndAlgorithmProgram
-{/// <summary>
-/// this class created for to calculate the temperature in the form of 
-/// celsious or fahrenheit
-/// </summary>
+{
+    /// <summary>
+    /// Temperature is class where IsTemperature is the method
+    /// </summary>
     class Temperature
     {
         /// <summary>
-        /// Istemperatures this instance.
-        /// mathod creat for calling by main method.
+        /// Determines whether this instance is temperature.
         /// </summary>
-        public void istemperature()
+        public void IsTemperature()
         {
             Console.WriteLine("enter the nvalue of c");
             

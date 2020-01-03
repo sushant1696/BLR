@@ -1,13 +1,24 @@
-﻿using System;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file= PowerOfTwo.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Sushanta das"/>
+// ----------------------------------------------------------------------------------------------------------------------
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace ThirtyFunctinalAndAlgorithmProgram
 {
+    /// <summary>
+    /// PowerOfTwo is the class and Ispower is the method.
+    /// </summary>
     class PowerOfTwo
     {
-        public void ispower()
-
+        /// <summary>
+        /// Ispowers this instance.
+        /// </summary>
+        public void Ispower()
         {
             Console.WriteLine("enter the value of n");
 
@@ -17,7 +28,7 @@ namespace ThirtyFunctinalAndAlgorithmProgram
                 int a=(int)Math.Pow(2,i);
                 Console.WriteLine(a);
             }
-            //Console.WriteLine(a);
+            
         }
     }
 }

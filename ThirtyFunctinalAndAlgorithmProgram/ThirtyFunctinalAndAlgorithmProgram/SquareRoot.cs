@@ -1,12 +1,24 @@
-﻿using System;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file=SquareRoot.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Sushanta das"/>
+// ----------------------------------------------------------------------------------------------------------------------
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace ThirtyFunctinalAndAlgorithmProgram
 {
+    /// <summary>
+    /// SquareRoot is class where IsSquare is a method square root class.
+    /// </summary>
     class SquareRoot
     {
-        public static void issquare()
+        /// <summary>
+        /// Determines whether this instance is square.
+        /// </summary>
+        public static void IsSquare()
         {
             double delta = 0, a = 1, b = 3, c = 5,r1,r2;
             delta = b * b - 4 * a * c;

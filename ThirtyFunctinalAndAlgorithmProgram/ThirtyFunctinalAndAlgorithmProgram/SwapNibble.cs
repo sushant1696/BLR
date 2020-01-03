@@ -1,18 +1,25 @@
-﻿using System;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file=SwapNibble.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Sushanta das"/>
+// ----------------------------------------------------------------------------------------------------------------------
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace ThirtyFunctinalAndAlgorithmProgram
 {/// <summary>
-/// created by: sushanta das(student of bridgelabz)
-/// date:31.12.2019
-/// This class create for swap the nible of byte
+/// SwapNibble is a class where IsSwap is the method
 /// </summary>
     class SwapNibble
     {
- 
-        //method for swaping the nibble.
-        public int isswap(int x)
+        /// <summary>
+        /// Determines whether the specified x is swap.
+        /// </summary>
+        /// <param name="x">The x.</param>
+        /// <returns></returns>
+        public int IsSwap(int x)
                    
         {
            

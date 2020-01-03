@@ -1,18 +1,24 @@
-﻿using System;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file=StopWatch.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Sushanta das"/>
+// ----------------------------------------------------------------------------------------------------------------------
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Diagnostics;
 using System.Threading;
 namespace ThirtyFunctinalAndAlgorithmProgram
 {
+    /// <summary>
+    /// StopWatch is a class where Main is method for invoked  by main method
+    /// </summary>
     class StopWatch
     {
 
         /// <summary>
-        /// Shis class created for the stopwatch.To measured the elapsed time.
-        /// "System.Diagnostics" 
-        /// namespace at the top. This is where the Stopwatch class is
-        /// defined in the Framework.ry point of the application.
+        /// Defines the entry point of the application.
         /// </summary>
         public void Main()
         {

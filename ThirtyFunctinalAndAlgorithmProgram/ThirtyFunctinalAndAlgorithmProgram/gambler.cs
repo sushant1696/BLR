@@ -1,12 +1,24 @@
-﻿using System;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file=Gambler.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Sushanta das"/>
+// ----------------------------------------------------------------------------------------------------------------------
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace ThirtyFunctinalAndAlgorithmProgram
 {
-    class gambler
+    /// <summary>
+    /// Gambler is a class where IsGambler is a method
+    /// </summary>
+    class Gambler
     {
-        public void isgambler()
+        /// <summary>
+        /// Determines whether this instance is gambler.
+        /// </summary>
+        public void IsGambler()
         {
             //input from the user
             Console.WriteLine("enter the no of stack");

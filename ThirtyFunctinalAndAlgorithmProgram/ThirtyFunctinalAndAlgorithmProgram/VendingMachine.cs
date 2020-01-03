@@ -1,12 +1,25 @@
-﻿using System;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file=VendingMachine.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Sushanta das"/>
+// ----------------------------------------------------------------------------------------------------------------------
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace ThirtyFunctinalAndAlgorithmProgram
 {
+    /// <summary>
+    /// VendingMachine is class where IsMachine is the method
+    /// </summary>
     class VendingMachine
     {
-        public void ismachine(int amount)
+        /// <summary>
+        /// Determines whether the specified amount is machine.
+        /// </summary>
+        /// <param name="amount">The amount.</param>
+        public void IsMachine(int amount)
         {
             int notes=0;
             Console.WriteLine("amount is :"+amount);
@@ -22,7 +35,7 @@ namespace ThirtyFunctinalAndAlgorithmProgram
                 if (amount == 0)
                     return;
                 else
-                    ismachine(amount % 1000);
+                    IsMachine(amount % 1000);
 
             }
             else if (amount >= 500)
@@ -32,7 +45,7 @@ namespace ThirtyFunctinalAndAlgorithmProgram
                 if (amount == 0)
                     return;
                 else
-                    ismachine(amount % 500);
+                    IsMachine(amount % 500);
             }
             else if (amount >= 200)
             {
@@ -41,7 +54,7 @@ namespace ThirtyFunctinalAndAlgorithmProgram
                 if (amount == 0)
                     return;
                 else
-                    ismachine(amount % 200);
+                    IsMachine(amount % 200);
             }
             else if (amount >= 100)
             {
@@ -50,7 +63,7 @@ namespace ThirtyFunctinalAndAlgorithmProgram
                 if (amount == 0)
                     return;
                 else
-                    ismachine(amount % 100);
+                    IsMachine(amount % 100);
             }
             else if (amount >= 50)
             {
@@ -59,7 +72,7 @@ namespace ThirtyFunctinalAndAlgorithmProgram
                 if (amount == 0)
                     return;
                 else
-                    ismachine(amount % 50);
+                    IsMachine(amount % 50);
             }
             else if (amount >= 20)
             {
@@ -68,7 +81,7 @@ namespace ThirtyFunctinalAndAlgorithmProgram
                 if (amount == 0)
                     return;
                 else
-                    ismachine(amount % 20);
+                    IsMachine(amount % 20);
             }
             else if (amount >= 100)
             {
@@ -77,7 +90,7 @@ namespace ThirtyFunctinalAndAlgorithmProgram
                 if (amount == 0)
                     return;
                 else
-                    ismachine(amount % 10);
+                    IsMachine(amount % 10);
             }
             else if (amount >= 5)
             {
@@ -86,7 +99,7 @@ namespace ThirtyFunctinalAndAlgorithmProgram
                 if (amount == 0)
                     return;
                 else
-                    ismachine(amount % 5);
+                    IsMachine(amount % 5);
             }
             else if (amount >= 2)
             {
@@ -95,7 +108,7 @@ namespace ThirtyFunctinalAndAlgorithmProgram
                 if (amount == 0)
                     return;
                 else
-                    ismachine(amount % 2);
+                    IsMachine(amount % 2);
             }
             else if  (amount >= 1)
             {
@@ -104,7 +117,7 @@ namespace ThirtyFunctinalAndAlgorithmProgram
                 if (amount == 0)
                     return;
                 else
-                    ismachine(amount % 1);
+                    IsMachine(amount % 1);
             }
         }
     }

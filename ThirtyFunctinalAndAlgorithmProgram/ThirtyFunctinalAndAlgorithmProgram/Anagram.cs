@@ -18,7 +18,7 @@ namespace ThirtyFunctinalAndAlgorithmProgram
         /// <summary>
         /// Determines whether this instance is anagram.
         /// </summary>
-       public void isAnagram()
+       public void IsAnagram()
         {
             // string s1 = "abcd";
             // string s2 = "cdab";

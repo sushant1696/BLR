@@ -19,7 +19,7 @@ namespace ThirtyFunctinalAndAlgorithmProgram
         /// Determines whether this instance is angstrong.
         /// </summary>
         /// <returns></returns>
-        public static int isAngstrong()
+        public static int IsArmstrong()
         {
             int sum = 0;
           int temp;

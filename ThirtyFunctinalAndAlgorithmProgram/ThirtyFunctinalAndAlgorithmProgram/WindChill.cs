@@ -1,13 +1,24 @@
-﻿using System;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file=WindChill.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Sushanta das"/>
+// ----------------------------------------------------------------------------------------------------------------------
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace ThirtyFunctinalAndAlgorithmProgram
 {
+    /// <summary>
+    /// WindChill is the class where IsWindchil is the method.
+    /// </summary>
     class WindChill
     {
-       
-        public void  iswindchil()
+        /// <summary>
+        /// Determines whether this instance is windchil.
+        /// </summary>
+        public void  IsWindchil()
         {
 
             //while ((t > 50) && (3 < v < 250))

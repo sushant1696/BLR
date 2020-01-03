@@ -1,10 +1,17 @@
-﻿using System;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file=Distance.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Sushanta das"/>
+// ----------------------------------------------------------------------------------------------------------------------
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace ThirtyFunctinalAndAlgorithmProgram
 {/// <summary>
 ///This class creat for Euclidean distance from the point (x, y) to the origin (0, 0)
+///where IsDistance is the method
 /// </summary>
     class Distance
     {
@@ -12,7 +19,7 @@ namespace ThirtyFunctinalAndAlgorithmProgram
         /// Isdistances this instance.
         /// method creat for calling by main method.
         /// </summary>
-        public void isdistance()
+        public void IsDistance()
         {
             Console.WriteLine("enter the value of  x :");
 

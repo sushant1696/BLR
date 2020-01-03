@@ -22,7 +22,7 @@ namespace ThirtyFunctinalAndAlgorithmProgram
         /// Determines whether the specified maximum is coupon.
         /// </summary>
         /// <param name="max">The maximum.</param>
-        public void isCoupon(int max)
+        public void IsCoupon(int max)
         {
 
              string coup = " ";

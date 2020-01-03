@@ -18,7 +18,7 @@ namespace ThirtyFunctinalAndAlgorithmProgram
         /// <summary>
         /// Determines whether this instance is squar.
         /// </summary>
-        public static void isSquar()
+        public static void IsSquar()
         {
             Console.WriteLine("enter the value of c");
             double c = int.Parse(Console.ReadLine());

@@ -1,12 +1,24 @@
-﻿using System;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file=InsertionSort.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Sushanta das"/>
+// ----------------------------------------------------------------------------------------------------------------------
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace ThirtyFunctinalAndAlgorithmProgram
 {
+    /// <summary>
+    /// InsertionSort is a class and Insertion os a method 
+    /// </summary>
     class InsertionSort
     {
-        public static void insertion()
+        /// <summary>
+        /// Insertions this instance.
+        /// </summary>
+        public static void Insertion()
         {
             int temp;
             int j;
