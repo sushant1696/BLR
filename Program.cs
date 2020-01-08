@@ -89,8 +89,6 @@ namespace DataStructure
             CircularLinkedList crlr = new CircularLinkedList();
          Node hh=(crlr.creatCircularList());
             crlr.Display();
-        }
-       
-            
+        }    
     }
 }
