@@ -1,0 +1,11 @@
+C:\Users\Bridgelabz\source\repos\DataStructureFinal\DataStructureFinal\bin\Debug\netcoreapp3.1\DataStructureFinal.exe
+C:\Users\Bridgelabz\source\repos\DataStructureFinal\DataStructureFinal\bin\Debug\netcoreapp3.1\DataStructureFinal.deps.json
+C:\Users\Bridgelabz\source\repos\DataStructureFinal\DataStructureFinal\bin\Debug\netcoreapp3.1\DataStructureFinal.runtimeconfig.json
+C:\Users\Bridgelabz\source\repos\DataStructureFinal\DataStructureFinal\bin\Debug\netcoreapp3.1\DataStructureFinal.runtimeconfig.dev.json
+C:\Users\Bridgelabz\source\repos\DataStructureFinal\DataStructureFinal\bin\Debug\netcoreapp3.1\DataStructureFinal.dll
+C:\Users\Bridgelabz\source\repos\DataStructureFinal\DataStructureFinal\bin\Debug\netcoreapp3.1\DataStructureFinal.pdb
+C:\Users\Bridgelabz\source\repos\DataStructureFinal\DataStructureFinal\obj\Debug\netcoreapp3.1\DataStructureFinal.csprojAssemblyReference.cache
+C:\Users\Bridgelabz\source\repos\DataStructureFinal\DataStructureFinal\obj\Debug\netcoreapp3.1\DataStructureFinal.AssemblyInfoInputs.cache
+C:\Users\Bridgelabz\source\repos\DataStructureFinal\DataStructureFinal\obj\Debug\netcoreapp3.1\DataStructureFinal.AssemblyInfo.cs
+C:\Users\Bridgelabz\source\repos\DataStructureFinal\DataStructureFinal\obj\Debug\netcoreapp3.1\DataStructureFinal.dll
+C:\Users\Bridgelabz\source\repos\DataStructureFinal\DataStructureFinal\obj\Debug\netcoreapp3.1\DataStructureFinal.pdb
