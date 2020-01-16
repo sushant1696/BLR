@@ -1,0 +1,13 @@
+[
+    {
+        "price": 60,
+        "name": "basmati",
+        "weight": 7
+
+    },
+    {
+        "price_per_kg": 100,
+        "name": "basmati",
+        "weight": 5
+    }
+]
