@@ -19,7 +19,7 @@ namespace OOPs
             }
             else
             {
-                Console.WriteLine("path does not exist");
+                Console.WriteLine("path does not found");
                 return new InventoryItemName();
             }
         }
