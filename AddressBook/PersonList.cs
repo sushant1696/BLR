@@ -8,7 +8,7 @@ namespace OPPS.AddresBook
     {
         private List<Person> people = new List<Person>();
 
-        public List<Person> People { get => this.people; set => this.people = value; }
+        public List<Person> Person { get => this.people; set => this.people = value; }
     }
    
 }

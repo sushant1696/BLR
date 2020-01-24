@@ -1,86 +1,39 @@
 ﻿
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace OPPS.AddresBook
 {
     class Utility
     {
-       
 
-        public static string ReadString()
+        public static PersonList ReadJsonFile()
         {
-            return Console.ReadLine();
-        }
-        
-       public static void ChooseOption()
-        {
-            string command = "";
-            while (command != "exit")
+            if (File.Exists(@"C:\Users\Bridgelabz\source\repos\OPPS\OPPS\AddressBook\json1.json"))
             {
-                Console.Clear();
-                Console.WriteLine("Please enter a command: ");
-                command = Console.ReadLine().ToLower();
-                switch (command)
-                {
-                    case "add":
-                        Utility.AddPerson();
-                        break;
-                    //case "remove":
-                    //   Utility.Delet();
-                    //    break;
-                   
-                }
+                string files = File.ReadAllText(@"C:\Users\Bridgelabz\source\repos\OPPS\OPPS\AddressBook\json1.json");
+                PersonList array = JsonConvert.DeserializeObject<PersonList>(files);
+                return array;
+            }
+            else
+            {
+                Console.WriteLine("path does not found");
+                return new PersonList();
             }
         }
 
-        public static void ListPeople()
+        /// <summary>
+        /// Writes the json file.
+        /// </summary>
+        /// <param name="file">The file.</param>
+        public static void WriteJsonFile(PersonList file)
         {
-            try
-            {
-                throw new NotImplementedException();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+            string json = JsonConvert.SerializeObject(file);
+            File.WriteAllText(@"C:\Users\Bridgelabz\source\repos\OPPS\OPPS\AddressBook\json1.json", json);
         }
 
-        public static void Choose()
-        {
-            try
-            {
-                throw new NotImplementedException();
-            }
-            catch(Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-        }
-
-        public static void RemovePerson()
-        {
-            try
-            {
-                throw new NotImplementedException();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-        }
-
-        public static void AddPerson()
-        {
-            try
-            {
-                throw new NotImplementedException();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-        }
     }
 }

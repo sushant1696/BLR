@@ -1,4 +1,4 @@
-﻿using DocumentFormat.OpenXml.Office2013.Word;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,110 +7,130 @@ namespace OPPS.AddresBook
 {
     class Person
     {
-  
+
         private string firstName;
         private string lastName;
         private string phoneNumber;
-        private string Pin;
         private string addresses;
 
-        public static int Count { get; internal set; }
+
+
         public string FirstName { get => this.firstName; set => this.firstName = value; }
         public string LastName { get => this.lastName; set => this.lastName = value; }
         public string PhoneNumber { get => this.phoneNumber; set => this.phoneNumber = value; }
-        public string Pin1 { get => Pin; set => Pin = value; }
         public string Addresses { get => this.addresses; set => this.addresses = value; }
 
 
-        private static void AddPerson()
+        public static void Print()
         {
-            Person person = new Person();
-
-            Console.Write("Enter First Name: ");
-            person.FirstName = Console.ReadLine();
-
-            Console.Write("Enter Last Name: ");
-            person.LastName = Console.ReadLine();
-
-            Console.Write("Enter Phone Number: ");
-            person.PhoneNumber = Console.ReadLine();
-
-            Console.Write("Enter Address 1: ");
-            string[] addresses = new string[2];
-            addresses[0] = Console.ReadLine();
-            Console.Write("Enter Address 2 (Optional): ");
-            addresses[1] = Console.ReadLine();
-            person.Addresses = string.Concat(addresses);
-
-            Person.Add(person);
-        }
-
-        public static void Add(Person person)
-        {
-            try
+            PersonList array = Utility.ReadJsonFile();
+            foreach (var item in array.Person)
             {
-                throw new NotImplementedException();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine("Firstname =" + item.FirstName);
+                Console.WriteLine("LastName =" + item.LastName);
+                Console.WriteLine(" phoneNumber =" + item.PhoneNumber);
+                Console.WriteLine(" Addresses =" + item.Addresses);
+                Console.WriteLine();
             }
         }
-
-        private static void PrintPerson(Person person)
+        public static void AddDetails(string Firstname, string LastName, string PhoneNumber, string Addresses)
         {
-            Console.WriteLine("First Name: " + person.FirstName);
-            Console.WriteLine("Last Name: " + person.LastName);
-            Console.WriteLine("Phone Number: " + person.PhoneNumber);
-            Console.WriteLine("Address 1: " + person.Addresses[0]);
-            Console.WriteLine("Address 2: " + person.Addresses[1]);
-            Console.WriteLine("-------------------------------------------");
+            PersonList array = Utility.ReadJsonFile();
+            Person obj = new Person();
+            obj.firstName = Firstname;
+            obj.lastName = LastName;
+            obj.phoneNumber = PhoneNumber;
+            obj.addresses = Addresses;
+            array.Person.Add(obj);
+            Utility.WriteJsonFile(array);
         }
-       public static void Delet()
+        public static void Currection()
         {
-            Console.WriteLine("Enter the first name of the person you would like to remove.");
-            string firstName = Console.ReadLine();
-            object person = null;
-            // Person person = People.FirstOrDefault(x => x.FirstName.ToLower() == firstName.ToLower());
-            if (person == null)
+            int j = 1;
+            PersonList array = Utility.ReadJsonFile();
+            foreach (var i in array.Person)
             {
-                Console.WriteLine("That person could not be found. Press any key to continue");
-                Console.ReadKey();
-                return;
+                Console.WriteLine(j++ + "=" + i.FirstName);
+                Console.WriteLine(j++ + "=" + i.LastName);
+                Console.WriteLine(j++ + "=" + i.phoneNumber);
+                Console.WriteLine(j++ + "=" + i.addresses);
             }
-            Console.WriteLine("Are you sure you want to remove this person from your address book? (Y/N)");
-            PrintPerson(person);
+            Console.WriteLine("Enter the item no");
+            int itemNumber = Convert.ToInt32(Console.ReadLine());
 
-            if (Console.ReadKey().Key == ConsoleKey.Y)
+            string name1 = array.Person[itemNumber - 1].FirstName;
+
+            foreach (var item in array.Person)
             {
-                Person.Remove(person);
-                Console.WriteLine("Person removed. Press any key to continue.");
-                Console.ReadKey();
+                if (item.FirstName != name1)
+                {
+                    continue;
+                }
+                else
+                {
+                    Console.WriteLine("FirstName = " + item.FirstName + "\nLastName = " + item.LastName + "\nphoneNumber =" + item.PhoneNumber + "Addresses\n=" + item.Addresses);
+                }
+
+                Console.WriteLine("enter 1 to edit first name");
+                Console.WriteLine("enter 2 to edit last");
+                Console.WriteLine("enter 3 to edit phone no");
+                Console.WriteLine("enter 4 to edit addres");
+
+                Console.WriteLine("enter a proper choice");
+
+                int choice = Convert.ToInt32(Console.ReadLine());
+               
+
+                    switch (choice)
+                    {
+
+                        case 1:
+                            Console.WriteLine("enter any new first name");
+                            string newName = Console.ReadLine();
+                            array.Person[itemNumber - 1].FirstName = newName;
+                            break;
+                        case 2:
+                            Console.WriteLine("enter the new lastname");
+                            string last = Console.ReadLine();
+                            array.Person[itemNumber - 1].lastName = last;
+                            break;
+
+                        case 3:
+                            Console.WriteLine("enter the new phon no");
+                            string newphon = Console.ReadLine();
+                            array.Person[itemNumber - 1].PhoneNumber = newphon;
+                            break;
+                        case 4:
+                            Console.WriteLine("enter the new address");
+                            string newadd = Console.ReadLine();
+                            array.Person[itemNumber - 1].Addresses = newadd;
+                            break;
+
+                    }
+                
+                Utility.WriteJsonFile(array);
             }
+
+
         }
-
-        public static void PrintPerson(object person)
+        public static void Deleteitem()
         {
-            try
+            int j = 1;
+            PersonList array = Utility.ReadJsonFile();
+            foreach (var i in array.Person)
             {
-                throw new NotImplementedException();
+                Console.WriteLine(j++ + "=" + i.FirstName);
+                Console.WriteLine(j++ + "=" + i.LastName);
+                Console.WriteLine(j++ + "=" + i.phoneNumber);
+                Console.WriteLine(j++ + "=" + i.addresses);
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-        }
 
-        public static void Remove(object person)
-        {
-            try
-            {
-                throw new NotImplementedException();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+            Console.WriteLine("Enter the item to delete");
+            int itemNumber = Convert.ToInt32(Console.ReadLine());
+            array.Person.RemoveAt(itemNumber - 1);
+            Utility.WriteJsonFile(array);
         }
+    }     
+        
     }
-}
+
