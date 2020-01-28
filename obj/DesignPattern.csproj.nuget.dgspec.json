@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bridgelabz\\Desktop\\DesignPattern\\DesignPattern.csproj": {}
+    "C:\\Users\\Bridgelabz\\source\\repos\\DesignPattern\\DesignPattern.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bridgelabz\\Desktop\\DesignPattern\\DesignPattern.csproj": {
+    "C:\\Users\\Bridgelabz\\source\\repos\\DesignPattern\\DesignPattern.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bridgelabz\\Desktop\\DesignPattern\\DesignPattern.csproj",
+        "projectUniqueName": "C:\\Users\\Bridgelabz\\source\\repos\\DesignPattern\\DesignPattern.csproj",
         "projectName": "DesignPattern",
-        "projectPath": "C:\\Users\\Bridgelabz\\Desktop\\DesignPattern\\DesignPattern.csproj",
+        "projectPath": "C:\\Users\\Bridgelabz\\source\\repos\\DesignPattern\\DesignPattern.csproj",
         "packagesPath": "C:\\Users\\Bridgelabz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bridgelabz\\Desktop\\DesignPattern\\obj\\",
+        "outputPath": "C:\\Users\\Bridgelabz\\source\\repos\\DesignPattern\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -41,6 +41,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "System.Reactive": {
+              "target": "Package",
+              "version": "[4.3.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

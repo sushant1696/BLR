@@ -1,11 +1,53 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "System.Reactive/4.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.0/System.Reactive.targets": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "System.Reactive/4.3.2": {
+      "sha512": "WhGkScPWxw2pp7UwRW8M1OvYZ3WUDPC2wJ0aiuaB4KRD3bt4wLkgHgYnOUu87WRhsurvv5LN0E63iWOEza2o8g==",
+      "type": "package",
+      "path": "system.reactive/4.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/netcoreapp3.0/System.Reactive.dll",
+        "build/netcoreapp3.0/System.Reactive.targets",
+        "build/netcoreapp3.0/System.Reactive.xml",
+        "buildTransitive/netcoreapp3.0/System.Reactive.targets",
+        "lib/net46/System.Reactive.dll",
+        "lib/net46/System.Reactive.xml",
+        "lib/netcoreapp3.0/_._",
+        "lib/netstandard2.0/System.Reactive.dll",
+        "lib/netstandard2.0/System.Reactive.xml",
+        "lib/uap10.0.16299/System.Reactive.dll",
+        "lib/uap10.0.16299/System.Reactive.pri",
+        "lib/uap10.0.16299/System.Reactive.xml",
+        "lib/uap10.0/System.Reactive.dll",
+        "lib/uap10.0/System.Reactive.pri",
+        "lib/uap10.0/System.Reactive.xml",
+        "system.reactive.4.3.2.nupkg.sha512",
+        "system.reactive.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "System.Reactive >= 4.3.2"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Bridgelabz\\.nuget\\packages\\": {},
@@ -14,11 +56,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bridgelabz\\Desktop\\DesignPattern\\DesignPattern.csproj",
+      "projectUniqueName": "C:\\Users\\Bridgelabz\\source\\repos\\DesignPattern\\DesignPattern.csproj",
       "projectName": "DesignPattern",
-      "projectPath": "C:\\Users\\Bridgelabz\\Desktop\\DesignPattern\\DesignPattern.csproj",
+      "projectPath": "C:\\Users\\Bridgelabz\\source\\repos\\DesignPattern\\DesignPattern.csproj",
       "packagesPath": "C:\\Users\\Bridgelabz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bridgelabz\\Desktop\\DesignPattern\\obj\\",
+      "outputPath": "C:\\Users\\Bridgelabz\\source\\repos\\DesignPattern\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -48,6 +90,12 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "dependencies": {
+          "System.Reactive": {
+            "target": "Package",
+            "version": "[4.3.2, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

@@ -1,14 +1,17 @@
-﻿using DesignPattern.Facade;
+﻿using DesignPattern.AdapterDesign;
+using DesignPattern.Facade;
 using DesignPattern.FactoryDesignPattern;
 using DesignPattern.MediatorDesign;
+using DesignPattern.ObserberDesignPattern;
 using DesignPattern.PrototypeDesign;
+using DesignPattern.ProxyDesignPattern;
 using System;
 
 namespace DesignPattern
 {
     class Program
     {
-        private static Facade.Facade facobj;
+      
 
         public static void DisplayValues(Person p)
         {
@@ -19,18 +22,22 @@ namespace DesignPattern
         [Obsolete]
         static void Main(string[] args)
         {
+
             Console.WriteLine("choose your option");
             Console.WriteLine("1->factory design");
             Console.WriteLine("2->prototype design");
             Console.WriteLine("3-> facade design pattern");
-            Console.WriteLine("6-> mediator");
-            
+            Console.WriteLine("4-> adapter");
+            Console.WriteLine("5-> Proxy design pattern");
+
+            Console.WriteLine("6-> observer design patern");
+
             int k = Convert.ToInt32(Console.ReadLine());
 
             switch (k) 
             {
                 case 1:
-            //TestFactory.IsFactory();
+            TestFactory.IsFactory();
                     break;
                 case 2:
                     Person p1 = new Person();
@@ -69,9 +76,33 @@ namespace DesignPattern
 
                     break;
                 case 3:
-                    Client.ClientMethod(facobj);
+
+                    ////Client.ClientMethod(ob);
+                    //Facade obj = new Facade();
+                    //obj.FacadeOperationMethod();
+                    //break;
+                case 4:
+                    AdapterTeast.AdapterTestMethod();
+                    break;
+                case 5:
+                    Final.FinalMethod();
                     break;
                 case 6:
+                    var subject = new Subject();
+                    var observerA = new ConcreteObserverA();
+                    subject.Attach(observerA);
+
+                    var observerB = new ConcreteObserverB();
+                    subject.Attach(observerB);
+
+                    subject.SomeBusinessLogic();
+                    subject.SomeBusinessLogic();
+
+                    subject.Detach(observerB);
+
+                    subject.SomeBusinessLogic();
+                    break;
+                case 7:
                     Test.TestMethod();
                     break;
         }
