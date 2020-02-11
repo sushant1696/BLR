@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bridgelabz\\source\\repos\\Basic\\Basic\\Basic.csproj",
+      "projectUniqueName": "C:\\Users\\Bridgelabz\\source\\repos\\NewTrackSheet\\Basic\\Basic.csproj",
       "projectName": "Basic",
-      "projectPath": "C:\\Users\\Bridgelabz\\source\\repos\\Basic\\Basic\\Basic.csproj",
+      "projectPath": "C:\\Users\\Bridgelabz\\source\\repos\\NewTrackSheet\\Basic\\Basic.csproj",
       "packagesPath": "C:\\Users\\Bridgelabz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bridgelabz\\source\\repos\\Basic\\Basic\\obj\\",
+      "outputPath": "C:\\Users\\Bridgelabz\\source\\repos\\NewTrackSheet\\Basic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

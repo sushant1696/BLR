@@ -6,9 +6,9 @@ namespace Basic.TicTacGame
 {
     class TicTacToy
     {
-        public char[,] board=new char[3,3];
+        public char[,] board;
        
-        public char CurrentPlayer='x';
+        public char CurrentPlayer;
         public void TicTacs()
         {
             board = new char[3, 3];
@@ -41,20 +41,31 @@ namespace Basic.TicTacGame
             }
           
         }
-        public Boolean isfullboard()
+        public bool isfullboard()
         {
             bool isfull = true;
             for(int i = 0; i < 3; i++)
             {
                 for(int j = 0; j < 3; j++)
                 {
-                    if (board[i, j] = '-')
+                    if (board[i,j] == '-')
                     {
                         isfull = false;
                     }
                 }
             }
             return isfull;
+        }
+        public bool CheckForWin()
+        {
+            return (CheckRowWin() || checkColWin() || CheckDiaWin());
+        }
+        public bool CheckRowWin()
+        {
+            for(int i = 0; i < 3; i++)
+            {
+
+            }
         }
     }
 }
