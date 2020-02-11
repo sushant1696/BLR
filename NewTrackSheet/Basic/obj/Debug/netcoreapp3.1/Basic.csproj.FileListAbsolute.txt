@@ -1,0 +1,11 @@
+C:\Users\Bridgelabz\source\repos\Basic\Basic\bin\Debug\netcoreapp3.1\Basic.exe
+C:\Users\Bridgelabz\source\repos\Basic\Basic\bin\Debug\netcoreapp3.1\Basic.deps.json
+C:\Users\Bridgelabz\source\repos\Basic\Basic\bin\Debug\netcoreapp3.1\Basic.runtimeconfig.json
+C:\Users\Bridgelabz\source\repos\Basic\Basic\bin\Debug\netcoreapp3.1\Basic.runtimeconfig.dev.json
+C:\Users\Bridgelabz\source\repos\Basic\Basic\bin\Debug\netcoreapp3.1\Basic.dll
+C:\Users\Bridgelabz\source\repos\Basic\Basic\bin\Debug\netcoreapp3.1\Basic.pdb
+C:\Users\Bridgelabz\source\repos\Basic\Basic\obj\Debug\netcoreapp3.1\Basic.csprojAssemblyReference.cache
+C:\Users\Bridgelabz\source\repos\Basic\Basic\obj\Debug\netcoreapp3.1\Basic.AssemblyInfoInputs.cache
+C:\Users\Bridgelabz\source\repos\Basic\Basic\obj\Debug\netcoreapp3.1\Basic.AssemblyInfo.cs
+C:\Users\Bridgelabz\source\repos\Basic\Basic\obj\Debug\netcoreapp3.1\Basic.dll
+C:\Users\Bridgelabz\source\repos\Basic\Basic\obj\Debug\netcoreapp3.1\Basic.pdb
