@@ -59,13 +59,13 @@ namespace UnitTest
                 return null;
             }
         }
-        public static string Password(string pswd)
+        public static string Password(string pswds)
         {
             string pattern = @"^[a-z,A-Z,0-9,#%^*]{8,}]]$";
             Regex rgx = new Regex(pattern);
-            if (rgx.IsMatch(pswd))
+            if (rgx.IsMatch(pswds))
             {
-                return pswd;
+                return pswds;
             }
             else
             {

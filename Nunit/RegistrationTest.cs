@@ -55,9 +55,9 @@ namespace NUnitTestProject1
         }
         public void passwordTest()
         {
-            string pswd = "shan123.";
-            string expect2 = RegexDemo.Email(pswd);
-            Assert.AreEqual(pswd, expect2);
+            string pswds = "shan123.";
+            string expect2 = RegexDemo.Email(pswds);
+            Assert.AreEqual(pswds, expect2);
         }
     }
 }
