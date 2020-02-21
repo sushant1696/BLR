@@ -1,6 +1,7 @@
 
 using NUnit.Framework;
 using NunitTestInMoodAnalysis.usecase1;
+using NunitTestInMoodAnalysis.UseCase2;
 using System;
 
 namespace MoodAnalysisNunitTest
@@ -46,6 +47,15 @@ namespace MoodAnalysisNunitTest
             string result = obj.MoodAnalyse_ReturnMethod();
             Assert.AreEqual("HAPPY", result);
         }
+        //for usecase2
+        [Test]
+        public void GivenSadMessage_WhenAnalyse_ReturnSad3()
+        {
+            string obj = UseCase2.MoodAnalyse_ReturnMethod3(null);
+            Assert.AreEqual("HAPPY", obj);
+        }
+        
+       
 
     }
 }

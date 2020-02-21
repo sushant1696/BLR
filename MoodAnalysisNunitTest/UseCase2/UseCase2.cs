@@ -24,32 +24,19 @@ namespace NunitTestInMoodAnalysis.UseCase2
                 {
                     return "SAD";
                 }
-                else (message.ToLower().Contains("happy"))
+                else if (message.ToLower().Contains("happy"))
                 {
                     return "HAPPY";
                 }
-                
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-                return "happy";
+                return "HAPPY";
             }
             return null;
         }
 
-        public string MoodAnalyse_ReturnMethod()
-        {
-            if (message.ToLower().Contains("sad"))
-            {
-                return "SAD";
-            }
-            else if (message.ToLower().Contains("happy"))
-            {
-                return "HAPPY";
-            }
-            else
-                return "HAPPY";
-        }
+
     }
 }
